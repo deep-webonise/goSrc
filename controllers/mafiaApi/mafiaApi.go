@@ -1,4 +1,4 @@
-package controllers
+package mafiaApi
 
 import (
 	"encoding/json"

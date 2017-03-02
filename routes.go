@@ -1,7 +1,7 @@
 package main
 
 import (
-	"controllers"
+	"controllers/mafiaApi"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -35,18 +35,18 @@ var routes = Routes{
 		"Index",
 		"GET",
 		"/",
-		controllers.Index,
+		mafiaApi.Index,
 	},
 	Route{
 		"TodoIndex",
 		"GET",
 		"/todos",
-		controllers.TodoIndex,
+		mafiaApi.TodoIndex,
 	},
 	Route{
 		"TodoShow",
 		"GET",
 		"/todos/{todoId}",
-		controllers.TodoShow,
+		mafiaApi.TodoShow,
 	},
 }
